@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    background-color: black;
+    animation: fondo 2s ease 4s forwards;
+}
+
+@keyframes fondo {
+    0%{background-color: black;}
+    70%{background-color: #584C26;}
+    85%{background-color: #9E1D1D;}
+    88%{background-color: #BB0103;}
+    90%{background-color: #C84C0C;}
+    95%{background-color: black;}
+    100%{background-color: #FCD8A8;}
+}
+.telon{
+    width: 100vw;
+    position: absolute;
+    height: 100vh;
+    animation: ejemplo 2s ease forwards;
+    animation-delay: 2s;
+    z-index: 10;
+}
+@keyframes ejemplo{
+    0%{top: -10%;}
+    100%{top:-83%}
+}
+.letras{
+    height: auto;
+    width: 600px;
+    position: absolute;
+    top: -500px;
+    left: 33%;
+    animation: letra 1s linear 6s forwards;
+}
+@keyframes letra{
+    from{top: -500px;}
+    to{top: 100px;}
+}
+.telon{
+    width: 100vw;
+    height: 100vh;
+}
+.luigi, .mario, .goomba, .tortuga{
+    position: absolute;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+}
+.luigi{
+    left: 5px;
+    top: 630px;
+    animation: luigi 3s linear 7s forwards;
+}
+@keyframes luigi{
+    from{left: 0;}
+    to{left: 1500px;}
+}
+.mario{
+    right: 5px;
+    top: 630px;
+}
+.goomba{
+    top: -100px;
+    animation: goomba 2s ease 7s forwards;
+}
+.tortuga{
+    top: -100px;
+}
+@keyframes goomba{
+    0%{top: -100px;}
+    50%{top: 700px;}
+    80%{left:700px;}
+    100%{top: 650px;}
+}
+@keyframes tortuga{
+    0
+}
+.uno{
+    position: absolute;
+    right: 0px;
+    top: 410px;
+}
+.dos{
+    position: absolute;
+    left: 0;
+    top: 400px;
+}
+.suelo{
+    top: 90%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
